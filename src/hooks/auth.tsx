@@ -72,6 +72,7 @@ const AuthProvider: React.FC = ({ children }) => {
       });
      
     },
+    // eslint-disable-next-line
     [setData, data.user],
     
   );

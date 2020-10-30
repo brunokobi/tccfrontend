@@ -64,6 +64,7 @@ const Login:React.FC =()=>{
                 description: 'Ocorreu um erro ao fazer login, cheque as credenciais.',
               });
         }
+        // eslint-disable-next-line
     },[signIn, addToast, history]);
 return(
     <Container>

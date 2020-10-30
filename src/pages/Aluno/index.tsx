@@ -4,10 +4,10 @@ import ptBR from 'date-fns/locale/pt-BR';
 import 'react-day-picker/lib/style.css';
 import {FormHandles} from '@unform/core';
 import {Form} from '@unform/web';
-import * as Yup from 'yup';
-import {FaUserGraduate,FaRegAddressCard,FaPlus,FaTrashAlt,FaEdit,FaArrowLeft} from 'react-icons/fa';
+//import * as Yup from 'yup';
+import {FaUserGraduate,FaRegAddressCard,FaTrashAlt,FaEdit,FaArrowLeft} from 'react-icons/fa';
 import {RiUserAddFill} from 'react-icons/ri';
-import { Link,useHistory } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import {
   Container,
   Header,
@@ -20,7 +20,7 @@ import {
 } from './styles';
 
 import logoImg from '../../assets/now.png';
-import { useAuth } from '../../hooks/auth';
+//import { useAuth } from '../../hooks/auth';
 import api from '../../services/api';
 
 interface MonthAvailabilityItem {
@@ -50,8 +50,9 @@ interface request{
 }
 
 const Dashboard: React.FC = () => {
-  const { user, signOut } = useAuth();
+ // const { user, signOut } = useAuth();
   const formRef =useRef<FormHandles>(null);
+  // eslint-disable-next-line
   const [selectedDate, setSelectedDate] = useState(new Date());   
   const [alunos,setAlunos]= useState<Aluno[]>([]);
   // const history = useHistory();

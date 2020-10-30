@@ -3,7 +3,7 @@ import{RiUserAddFill} from 'react-icons/ri';
 import { isToday, format} from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 import 'react-day-picker/lib/style.css';
-import {FaUserGraduate,FaRegAddressCard,FaPlus,FaTrashAlt,FaEdit,FaArrowLeft} from 'react-icons/fa';
+import {FaUserGraduate,FaRegAddressCard,FaTrashAlt,FaEdit,FaArrowLeft} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import {
   Container,
@@ -17,7 +17,7 @@ import {
 } from './styles';
 
 import logoImg from '../../assets/now.png';
-import { useAuth } from '../../hooks/auth';
+//import { useAuth } from '../../hooks/auth';
 import api from '../../services/api';
 
 interface MonthAvailabilityItem {
@@ -41,8 +41,8 @@ interface Usuarios{
 }
 
 const Dashboard: React.FC = () => {
-  const { user, signOut } = useAuth();
-
+  //const { user, signOut } = useAuth();
+  // eslint-disable-next-line
   const [selectedDate, setSelectedDate] = useState(new Date());   
   const [alunos,setAlunos]= useState<Usuarios[]>([]);
   

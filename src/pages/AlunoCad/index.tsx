@@ -11,7 +11,7 @@ import validacaoErros from '../../utils/validacaoErros';
 import { Link, useHistory } from 'react-router-dom';
 import { useToast } from '../../hooks/toast';
 import api from '../../services/api';
-import { useAuth } from '../../hooks/auth';
+
 
 interface request{
     nome:string;
@@ -22,8 +22,7 @@ interface request{
 const AlunoCad:React.FC =()=>{   
     const formRef =useRef<FormHandles>(null);    
     const { addToast } = useToast();
-    const history = useHistory();
-    const { user, updateUser } = useAuth();
+    const history = useHistory();  
     const fileInput = useRef<HTMLInputElement>(null);    
    
 

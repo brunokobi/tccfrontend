@@ -2,7 +2,7 @@ import React, { useState,  useEffect, useMemo } from 'react';
 import { isToday, format, parseISO} from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 import 'react-day-picker/lib/style.css';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {FiClock,FiMapPin} from 'react-icons/fi';
 import {FaPowerOff,FaUserGraduate,FaUser,FaRegUserCircle,FaRegEye,FaGlobeAmericas} from 'react-icons/fa';
 
@@ -43,9 +43,10 @@ interface Registro{
 
 const Dashboard: React.FC = () => {
   const { user, signOut } = useAuth();
-  const [selectedDate, setSelectedDate] = useState(new Date());   
+  // eslint-disable-next-line
+  const [selectedDate, setSelectedDate] = useState(new Date());
   const [registros,setRegistros]= useState<Registro[]>([]);
-  const history = useHistory();
+  //const history = useHistory();
   
 
 

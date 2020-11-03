@@ -96,7 +96,7 @@ const Dashboard: React.FC = () => {
           
         <div>
           <span>         
-          <a href="http://127.0.0.1:8080/">
+          <a href="https://presencenowreconhecimento.netlify.app">
             <button type="button" title="Ativar" >
             <FaRegEye/> 
             </button>

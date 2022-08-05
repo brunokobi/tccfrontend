@@ -1,4 +1,4 @@
-# Presence Now
+# Presence Now - FrontEnd
 <img src="src/assets/now.png" alt="Presence Now" width="80px">
 
 Presence Now é um software de aferição de assiduidade estudantil por reconhecimento facial em real-time , o FrontEnd foi desenvolvido em react utilizando typescript , o BackEnd utiliza as mesmas linguagens, e foi implementado em formado de Rest API, o módulo de reconhecimento facial utiliza apenas Javascript, HTML e CSS , mas faz uso da faceapi.js que utiliza a API do tensorflow.js e implementa uma série de redes neurais convulsionais (CNNs).
@@ -9,3 +9,5 @@ O Projeto foi meu trabalho de conclusão de curso (TCC) e aprovado com nota máx
 <br> <br>
 
 <img src="tela.png" alt="Presence Now" width="100%">
+<img src="tela2.png" alt="Presence Now" width="100%">
+<img src="tela3.png" alt="Presence Now" width="100%">
